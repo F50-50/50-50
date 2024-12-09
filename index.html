@@ -3,105 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Viewer</title>
+    <title>Responsive Template</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            margin: 0;
             background-color: #f9f9f9;
         }
+
+        /* Container for the content */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Table Styling */
         table {
-            border-collapse: collapse;
             width: 100%;
-            margin: 20px auto;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            table-layout: fixed;
+            border-collapse: collapse;
         }
+
         th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
             text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
         }
+
         th {
             background-color: #007bff;
-            color: white;
+            color: #fff;
         }
+
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
         tr:hover {
-            background-color: #ddd;
+            background-color: #eaeaea;
         }
 
-        /* Mobile responsiveness */
+        /* Mobile Styling */
         @media (max-width: 768px) {
-            table {
-                width: 100%;
-                overflow-x: auto;
-                display: block;
-                white-space: nowrap;
-            }
-            th, td {
-                display: inline-block;
-                width: auto;
-                text-align: left;
-            }
-            th, td {
+            .container {
                 padding: 10px;
             }
-            th {
+
+            th, td {
                 font-size: 14px;
+                padding: 8px;
+            }
+
+            table {
+                overflow-x: auto;
+                display: block;
             }
         }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>FARIDABAD</th>
-                <th>GAZIYABAD</th>
-                <th>GALI</th>
-                <th>DISABAR</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2024-12-09</td>
-                <td>56</td>
-                <td>34</td>
-                <td>66</td>
-                <td>86</td>
-            </tr>
-            <tr>
-                <td>2024-12-10</td>
-                <td>43</td>
-                <td>97</td>
-                <td>35</td>
-                <td>65</td>
-            </tr>
-            <tr>
-                <td>2024-12-11</td>
-                <td>43</td>
-                <td>97</td>
-                <td>35</td>
-                <td>65</td>
-            </tr>
-             <tr>
-                <td>2024-12-12</td>
-                <td>43</td>
-                <td>97</td>
-                <td>35</td>
-                <td>65</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-12-09</td>
+                    <td>Value A</td>
+                    <td>Value B</td>
+                    <td>Value C</td>
+                    <td>Value D</td>
+                </tr>
+                <tr>
+                    <td>2024-12-10</td>
+                    <td>New Value A</td>
+                    <td>New Value B</td>
+                    <td>New Value C</td>
+                    <td>New Value D</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

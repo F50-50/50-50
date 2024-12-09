@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% comment %} <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -260,5 +260,55 @@
             </tbody>
         </table>
     </div>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Data</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Monthly Data</h1>
+
+    <!-- Section for Current Month -->
+    <section>
+        <h2>Current Month (December 2024)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-12-01</td>
+                    <td>Value A</td>
+                    <td>Value B</td>
+                    <td>Value C</td>
+                    <td>Value D</td>
+                </tr>
+                <!-- Add rows dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section for Previous Months -->
+    <section>
+        <h2>Previous Months</h2>
+        <ul>
+            <li><a href="January-2024.html">January 2024</a></li>
+            <li><a href="February-2024.html">February 2024</a></li>
+            <li><a href="March-2024.html">March 2024</a></li>
+            <!-- Add more links here -->
+        </ul>
+    </section>
 </body>
 </html>
